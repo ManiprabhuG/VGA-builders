@@ -55,22 +55,19 @@ export const Header: React.FC = () => {
               />
             </div>
             <div>
-              <span className="text-xl sm:text-2xl font-black tracking-wider text-slate-900 dark:text-white group-hover:text-amber-500 transition-colors flex items-center gap-1.5">
+              <span className="text-lg sm:text-xl font-black tracking-wider text-slate-900 dark:text-white group-hover:text-amber-500 transition-colors flex items-center gap-1.5">
                 VGA <span className="text-amber-500">BUILDERS</span>
               </span>
-              <p className="text-[10px] sm:text-xs font-semibold text-amber-500 uppercase tracking-widest leading-none">
-                {t("tagline")}
-              </p>
             </div>
           </a>
 
           {/* Desktop Navigation Links */}
-          <nav className="hidden lg:flex items-center space-x-6 text-sm font-medium">
+          <nav className="hidden lg:flex items-center space-x-4 text-xs font-semibold">
             {navLinks.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
-                className="text-slate-700 dark:text-slate-300 hover:text-amber-500 dark:hover:text-amber-400 transition-colors py-1 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-amber-500 hover:after:w-full after:transition-all"
+                className="text-slate-700 dark:text-slate-300 hover:text-amber-500 dark:hover:text-amber-400 transition-colors py-1 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-amber-500 hover:after:w-full after:transition-all whitespace-nowrap"
               >
                 {link.name}
               </a>
@@ -157,7 +154,7 @@ export const Header: React.FC = () => {
                 key={link.href}
                 href={link.href}
                 onClick={() => setMobileMenuOpen(false)}
-                className="text-base font-semibold text-slate-200 hover:text-amber-500 py-1 transition-colors border-b border-slate-800/60"
+                className="text-xs font-semibold text-slate-200 hover:text-amber-500 py-1.5 transition-colors border-b border-slate-800/60"
               >
                 {link.name}
               </a>
