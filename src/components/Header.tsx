@@ -59,7 +59,7 @@ export const Header: React.FC = () => {
           </a>
 
           {/* Desktop Navigation Links */}
-          <nav className="hidden lg:flex items-center space-x-4 text-xs font-semibold">
+          <nav className="hidden lg:flex items-center space-x-3.5 xl:space-x-4 text-[14.2px] font-semibold">
             {navLinks.map((link) => (
               <a
                 key={link.href}
@@ -103,7 +103,7 @@ export const Header: React.FC = () => {
                 key={link.href}
                 href={link.href}
                 onClick={() => setMobileMenuOpen(false)}
-                className="text-xs font-semibold text-slate-200 hover:text-amber-500 py-1.5 transition-colors border-b border-slate-800/60"
+                className="text-[14.2px] font-semibold text-slate-200 hover:text-amber-500 py-1.5 transition-colors border-b border-slate-800/60"
               >
                 {link.name}
               </a>
